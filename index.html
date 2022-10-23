@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="break_infinity.js"></script>
+    <script defer src="ui.js"></script>
+    <script defer src="game.js"></script>
+  </head>
+  <body class="stripes-dark">
+    <div id="header" class="flex-row box-rounded deep-ocean invisible">
+      <button id="openSoul" class="box-rounded tab-button button-selected">
+        Soul
+      </button>
+      <button id="openAvatar" class="box-rounded tab-button">Avatar</button>
+    </div>
+    <div id="soul" class="flex-row">
+      <div id="mana" class="canvas flex-col box-rounded hologram-blue">
+        <div id="manaInfo" class="info">
+          <div id="manaBar" class="bar">
+            <div id="manaAmount" class="amount">4/10 Mana</div>
+            <div id="manaIndicator" class="indicator"></div>
+          </div>
+          <div id="manaRate" class="rate">1 Mana/sec</div>
+          <div id="tier">Tier 1</div>
+          <button id="manaTier" class="action-button small">
+            Tier Up (10 Orbs)
+          </button>
+          <div id="tierMulti" class="description">
+            Your Tiers multiply mana regen by 4x.
+          </div>
+        </div>
+        <div id="orbs" class="info">
+          <div id="orbCount">You have 0 Mana Orbs</div>
+          <button id="condenseOrb" class="action-button">
+            Condense Mana Orb (1 Mana)
+          </button>
+          <br />
+          <div id="orbMulti" class="description">
+            Your Mana Orbs give a 1.0x multiplier to mana regeneration.
+          </div>
+        </div>
+        <div id="orbShop" class="info flex-col">
+          <div>Orb Upgrades</div>
+          <button id="upg1" class="action-button upgrade">upg1</button>
+          <button id="upg2" class="action-button upgrade">upg2</button>
+          <button id="upg3" class="action-button upgrade">upg3</button>
+          <button id="upg8" class="action-button upgrade">upg8</button>
+        </div>
+        <div id="stars" class="info">
+          <div id="starCount">You have 0 Mana Stars</div>
+          <button id="summonStar" class="action-button">
+            Summon Mana Star (Req Tier 4)
+          </button>
+          <br />
+          <div id="starPower" class="description">
+            Your Mana Stars raise orb effectiveness ^ 1.2.
+          </div>
+        </div>
+      </div>
+      <div id="light" class="canvas flex-col box-rounded hologram-yellow invisible">
+        <div id="lightInfo" class="info">
+          <div id="lightBar" class="bar">
+            <div id="lightAmount" class="amount">4 Light</div>
+            <div id="lightIndicator" class="indicator"></div>
+          </div>
+          <div id="lightRate" class="rate">1 Light/sec</div>
+          <div id="lightDesc" class="description">
+            Light gain is based off Star count.
+          </div>
+        </div>
+        <div id="orbShop" class="info flex-col">
+          <div>Light Upgrades</div>
+          <button id="upg4" class="action-button upgrade light">upg4</button>
+          <button id="upg9" class="action-button upgrade light">upg9</button>
+          <button id="upg5" class="action-button upgrade light">upg5</button>
+          <button id="upg6" class="action-button upgrade light">upg6</button>
+          <button id="upg7" class="action-button upgrade light">upg7</button>
+          <button id="upg10" class="action-button upgrade light">upg10</button>
+          <button id="upg11" class="action-button upgrade light">upg11</button>
+        </div>
+        <div id="supernovaInfo" class="info">
+          <div id="supernovaCount">You have 0 Supernova(s)</div>
+          <button id="supernova" class="action-button small white">
+            Supernova (100 Stars)
+          </button>
+          <div id="supernovaMulti" class="description">
+            Your supernova(s) multiply light gain by 1.
+          </div>
+        </div>
+        
+      </div>
+      <div id="supernovaMilestones" class="canvas flex-col box-rounded hologram-purple">
+        <div class="info dark">
+          <div>Supernova Milestones</div>
+          <div id="smilestone1" class="description">1 Supernova - e</div>
+          <div id="smilestone2" class="description">2 Supernova - e</div>
+          <div id="smilestone3" class="description">5 Supernova - e</div>
+        </div>
+        <div class="info dark">
+          <div>Limit Break<br>(fancy integral symbol here)</div>
+          <div class="description">1ee308 Mana Required (not added)</div>
+        </div>
+    </div>
+  </body>
+</html>
